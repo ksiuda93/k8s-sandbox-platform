@@ -3744,12 +3744,6 @@ rules:
   verbs:
   - '*'
 - apiGroups:
-  - helmcharts.source.toolkit.fluxcd.io
-  resources:
-  - '*'
-  verbs:
-  - '*'
-- apiGroups:
   - notification.toolkit.fluxcd.io
   resources:
   - '*'
