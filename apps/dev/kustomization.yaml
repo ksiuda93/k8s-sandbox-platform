@@ -3,5 +3,5 @@ kind: Kustomization
 namespace: go-microservice
 resources: 
   - ../base/go-microservice
-patchesStrategicMerge:
-  - go-micro-values.yaml
+# patchesStrategicMerge:
+#   - go-micro-values.yaml
