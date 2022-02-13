@@ -15,4 +15,8 @@ spec:
   interval: 5m
   install: 
     remediation:
-      retries: 10
+      retries: 3
+  values:
+    image: 
+      name: gh05tsh/go-rest-api
+      tag: main
