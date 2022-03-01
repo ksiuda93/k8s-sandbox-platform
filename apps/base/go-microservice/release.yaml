@@ -1,22 +1,22 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
-metadata: 
+metadata:
   name: go-micro
   namespace: go-microservice
-spec: 
+spec:
   releaseName: go-microservice-release
   chart:
-    spec: 
+    spec:
       chart: go-microservice
-      sourceRef: 
+      sourceRef:
         kind: HelmRepository
         name: go-microservice
         namespace: flux-system
   interval: 5m
-  install: 
+  install:
     remediation:
       retries: 3
   values:
-    image: 
+    image:
       name: gh05tsh/go-rest-api # {"$imagepolicy": "flux-system:go-microservices:name"}
-      tag: main # {"$imagepolicy": "flux-system:go-microservices:tag"}
+      tag: main-0320fb17-1646165099 # {"$imagepolicy": "flux-system:go-microservices:tag"}
