@@ -19,4 +19,4 @@ spec:
   values:
     image:
       name: gh05tsh/go-rest-api # {"$imagepolicy": "flux-system:go-microservices:name"}
-      tag: main-d263e03b-20220301-1646169848 # {"$imagepolicy": "flux-system:go-microservices:tag"}
+      tag: main-24735f2d-20220302T215301-1646171893 # {"$imagepolicy": "flux-system:go-microservices:tag"}
