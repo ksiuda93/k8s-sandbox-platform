@@ -7,8 +7,8 @@ spec:
   imageRepositoryRef:
     name: go-microservices
   filterTags: 
-    pattern: '^main-[a-fA-F0-9]+-(?P<ts>.*)'
-    extract: '$ts'
+    pattern: '^main-[a-fA-F0-9]+-(?P<date>\d{4}-\d{2}-\d{2})+-(?P<ts>.*)'
+    extract: '$date'
   policy:
      numerical:
       order: asc
