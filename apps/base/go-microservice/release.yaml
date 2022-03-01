@@ -18,5 +18,5 @@ spec:
       retries: 3
   values:
     image: 
-      name: gh05tsh/go-rest-api
-      tag: main
+      name: gh05tsh/go-rest-api # {"$imagepolicy": "flux-system:go-microservices:name"}
+      tag: main # {"$imagepolicy": "flux-system:go-microservices:tag"}
